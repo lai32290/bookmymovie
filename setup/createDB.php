@@ -1,6 +1,6 @@
 <?php
-  $servername = "localhost";
-  $username = "root";
+  $servername = getenv("DB_HOST");
+  $username = getenv("MYSQL_USER");
   $password = "";
 
   // Create connection
