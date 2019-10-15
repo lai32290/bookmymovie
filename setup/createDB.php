@@ -1,6 +1,6 @@
 <?php
-  $servername = getenv("DB_HOST");
-  $username = getenv("MYSQL_USER");
+  $servername = getenv("DB_HOST") ?: "localhost";
+  $username = "root";
   $password = "";
 
   // Create connection
@@ -8,6 +8,7 @@
 
   // Check connection
   if ($conn->connect_error) {
+
     die("Connection failed: " . $conn->connect_error);
   }
   echo "Connected successfully";

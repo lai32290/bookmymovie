@@ -1,7 +1,6 @@
  <?php
-  $servername = getenv("DB_HOST");
-  $username = getenv("MYSQL_USER");
-  var_dump($username);
+  $servername = getenv("DB_HOST") ?: "localhost";
+  $username = "root";
   $password = "";
   $database="bookmymovie";
   // Create connection
