@@ -16,7 +16,7 @@ services:
     environment:
       - DB_HOST=database
     ports:
-      - 90:8080
+      - 80:8080
     networks:
       - internal
     entrypoint: /app/wait-for database:3306 -- sh /app/app-entrypoint.sh
