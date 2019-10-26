@@ -21,6 +21,14 @@ Setting up MySQL requires you to open two pages one after another: <br>
 
 You can now browse the website from bookmymovie's root directory.
 
+### Deploy By Docker
+ - Install Docker
+ - Instal Docker Composer
+ - Run the following command in the terminal:
+ ```
+ $ docker-compose up --build
+ ```
+
 ## In Development Stage
 
 This project is still in alpha development stage so bugs and crashes are to be expected.
